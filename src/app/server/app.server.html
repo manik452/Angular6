@@ -1,0 +1,10 @@
+<h1>Server Component a</h1>
+<input (input)="serverUpdateRequest($event)">
+
+<input [(ngModel)]="serverUpdate">
+<button class="affix btn btn-info" [disabled]="!disableButton" (click)="serverCreateRequest()">Submit</button>
+<br>
+<p *ngIf="serverCreated; else ngserver"> server created and name is {{serverUpdate}}</p>
+<ng-template #ngserver>
+<p> ng Template Server is not created Yet</p>
+</ng-template>

@@ -1,0 +1,35 @@
+<!--<div class="container">
+  <app-cockpit
+    (serverCreated)="onServerAdded($event)"
+    (bpCreated)="onBlueprintAdded($event)"
+  ></app-cockpit>
+  <div class="row">
+    <div class="col-md-12">
+      <app-server-element
+        *ngFor="let serverElement of serverElements"
+        [srvElement]="serverElement"
+      ></app-server-element>
+    </div>
+  </div>
+</div>-->
+
+<app-header (featureSelected)="onVavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>I am working</h2>
+      <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<h2>Hello I am Here</h2>
+<input type="text" [(ngModel)]="name" >
+<br>
+
+<b>{{name}}</b>
+<app-server>Loading.....</app-server>
+-->
