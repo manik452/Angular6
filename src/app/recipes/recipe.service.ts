@@ -1,6 +1,9 @@
 import {RecipeModel} from './recipes-list/recipe.model';
+import {EventEmitter} from '@angular/core';
 
 export class RecipeService {
+
+  recipeSelected = new EventEmitter<RecipeModel>();
   private recipesArray: RecipeModel[] = [
     // tslint:disable-next-line:max-line-length
     new RecipeModel('Test Recipe', 'this is simply test', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfG5pyqaocAD_giORisKdsXr0w6EjLNoVfQh0zFUflhsp-gKkY'),
