@@ -9,6 +9,9 @@ export class AppComponent {
   title = 'dream-test-app';
   serverElements = [{type: 'server', name: 'Testser', content: 'just test'}];
   loadedFeature = 'recipe';
+  oddNumber = false;
+  evenary = [ 2, 4];
+  oddary = [1, 3, 5];
 
   onServerAdded(serverData: { serverName: string, serverContent: string }) {
     this.serverElements.push({

@@ -12,6 +12,27 @@
     </div>
   </div>
 </div>-->
+<!--
+<div>
+  <button class="btn btn-primary" (click)="oddNumber = !oddNumber">OddNumber</button>
+
+  <div *ngIf="oddNumber">
+    <ul>
+      <li *ngFor="let number of oddary">{{number}}</li>
+    </ul>
+
+  </div>
+
+  <div *appUnless="oddNumber">
+    <ul>
+      <li *ngFor="let number of evenary">{{number}}</li>
+    </ul>
+  </div>
+<p appBasicHighlight>This Is Test purpose</p>
+<p appBetterHighlight>This Is Test purpose</p>
+
+</div>-->
+
 
 <app-header (featureSelected)="onVavigate($event)"></app-header>
 <div class="container">

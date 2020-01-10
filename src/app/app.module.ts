@@ -14,6 +14,10 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { CockpitComponent } from './lecture5/cockpit/cockpit.component';
 import { ServerElementComponent } from './lecture5/server-element/server-element.component';
+import {BasicHighlightDirective} from './basic-highlight/basic-highlight-directive';
+import {BetterHighlightDirective} from './basic-highlight/better-highlight-directive';
+import {AppUnlessDirective} from './basic-highlight/app-unless-directive';
+import {DropdownDirective} from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { ServerElementComponent } from './lecture5/server-element/server-element
     ShoppingListComponent,
     ShoppingEditComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective,
+    AppUnlessDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
